@@ -35,6 +35,7 @@
         <a href="#how">How it works</a>
         <a href="#modes">Modes</a>
         <a href="#family">Family</a>
+        <a href="#install">Install</a>
         <a class="nav-cta" href="https://github.com/cover-100/cover100ai">GitHub</a>
       </nav>
     </div>
@@ -280,12 +281,32 @@ abort safety         resumable · salvageable · no work lost</code></pre>
       </div>
     </section>
 
-    <!-- BOTTOM CTA -->
-    <section class="section section-cta">
+    <!-- INSTALL -->
+    <section class="section section-cta" id="install">
       <div class="container center">
-        <h2>Green numbers are easy. Receipts are the product.</h2>
-        <div class="hero-ctas center">
-          <a class="btn btn-primary" href="https://github.com/cover-100/cover100ai">Follow on GitHub</a>
+        <h2>Try it.</h2>
+        <div class="install-block">
+          <div class="qs-tabs" role="tablist" aria-label="Install method">
+            <button type="button" role="tab" id="qs-tab-claude" aria-controls="qs-panel-claude" aria-selected="true" tabindex="0" class="qs-tab is-active" data-tab="claude">Claude Code</button>
+            <button type="button" role="tab" id="qs-tab-manual" aria-controls="qs-panel-manual" aria-selected="false" tabindex="-1" class="qs-tab" data-tab="manual">Manual</button>
+          </div>
+          <div id="qs-panel-claude" role="tabpanel" aria-labelledby="qs-tab-claude" class="qs-panel is-active" data-panel="claude">
+            <div class="terminal qs-terminal">
+              <pre><code><span class="prompt">$</span> /plugin marketplace add specscore/ai-marketplace
+<span class="prompt">$</span> /plugin install cover100@cover-100</code></pre>
+            </div>
+          </div>
+          <div id="qs-panel-manual" role="tabpanel" aria-labelledby="qs-tab-manual" class="qs-panel" data-panel="manual" hidden>
+            <div class="terminal qs-terminal">
+              <pre><code><span class="prompt">$</span> git clone https://github.com/cover-100/cover100ai
+<span class="prompt">$</span> cp -r cover100ai/skills ~/.claude/skills/</code></pre>
+            </div>
+            <p class="qs-note">Copy the <code>skills/</code> directory into your Claude Code skills folder. See the <a href="https://github.com/cover-100/cover100ai">README</a> for the full setup including codegraph.</p>
+          </div>
+        </div>
+        <p class="fine-print">Pre-release &mdash; star the repo to follow the launch. MIT-licensed.</p>
+        <div class="hero-ctas center" style="margin-top:1.5rem;">
+          <a class="btn btn-primary" href="https://github.com/cover-100/cover100ai">Star on GitHub</a>
           <a class="btn btn-ghost" href="https://specscore.md/">Meet SpecScore</a>
         </div>
       </div>

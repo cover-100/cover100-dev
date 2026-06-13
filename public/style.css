@@ -291,6 +291,50 @@ p { margin: 0 0 1em; }
 .lang-dot.ok { background: var(--accent); }
 .lang-dot.soon { background: #c4ccc9; }
 
+/* ---------- install / qs tabs ---------- */
+
+.install-block {
+  max-width: 540px;
+  margin: 2rem auto 1.2rem;
+  text-align: left;
+}
+
+.qs-tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 2px solid var(--line);
+}
+
+.qs-tab {
+  font: 600 0.9rem var(--font-sans);
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  transition: color 0.12s;
+}
+.qs-tab:hover { color: var(--ink); }
+.qs-tab.is-active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.qs-panel { display: none; }
+.qs-panel.is-active { display: block; }
+
+.qs-terminal { border-radius: 0 var(--radius) var(--radius) var(--radius) !important; }
+
+.prompt { color: #5fd3a5; user-select: none; }
+
+.qs-note {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin: 10px 0 0;
+}
+.qs-note a { color: var(--ink-soft); }
+.qs-note code { font-size: 0.85em; }
+
 /* ---------- bottom CTA / footer ---------- */
 
 .section-cta { padding: 72px 0; }
