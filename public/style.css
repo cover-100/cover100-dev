@@ -210,6 +210,13 @@ p { margin: 0 0 1em; }
 .section-alt { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section-lede { color: var(--ink-soft); max-width: 64ch; margin-bottom: 2rem; }
 
+.tech-stack-content { max-width: 800px; padding-top: 52px; padding-bottom: 76px; }
+.tech-stack-content h1 { margin-bottom: 0.6em; }
+.tech-stack-content .lede { margin-bottom: 2.5rem; }
+.tech-stack-content section { padding: 1.4rem 0; border-top: 1px solid var(--line); }
+.tech-stack-content section p { color: var(--ink-soft); }
+.tech-stack-crumb { font-size: 0.88rem; color: var(--ink-faint); margin-bottom: 2.2rem; }
+
 /* ---------- cards ---------- */
 
 .cards { display: grid; gap: 18px; }

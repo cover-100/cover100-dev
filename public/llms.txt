@@ -1,0 +1,8 @@
+# cover100
+
+> cover100.dev explains the coverage workflow and links to the current CLI and the proposed agent plugin.
+
+- [Home](https://cover100.dev/): Coverage workflow, report states, language profiles, and installation links.
+- [Tech stack](https://cover100.dev/about/tech-stack/): Website, Go coverage CLI, plugin specification, and related tools.
+- [Coverage CLI](https://github.com/sneat-dev/cover100-cli): Local Go and TypeScript/JavaScript coverage collector and treemap.
+- [Agent plugin specification](https://github.com/cover-100/cover100ai/tree/main/spec): Pre-release workflow and language profiles.

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cover100 tech stack — site, coverage CLI, and plugin plan</title>
+  <meta name="description" content="How cover100.dev is served, what the released Go coverage CLI does, and how the proposed agent plugin connects SpecScore specifications with coverage evidence." />
+  <meta name="color-scheme" content="light" />
+  <link rel="canonical" href="https://cover100.dev/about/tech-stack/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="cover100 tech stack — site, coverage CLI, and plugin plan" />
+  <meta property="og:description" content="How cover100.dev is served, what the released Go coverage CLI does, and how the proposed agent plugin connects SpecScore specifications with coverage evidence." />
+  <meta property="og:url" content="https://cover100.dev/about/tech-stack/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"AboutPage","@id":"https://cover100.dev/about/tech-stack/#page","url":"https://cover100.dev/about/tech-stack/","name":"cover100 tech stack — site, coverage CLI, and plugin plan","description":"How cover100.dev is served, what the released Go coverage CLI does, and how the proposed agent plugin connects SpecScore specifications with coverage evidence.","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cover100.dev/"},{"@type":"ListItem","position":2,"name":"Tech stack","item":"https://cover100.dev/about/tech-stack/"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="/" aria-label="cover100 home"><span class="brand-name">cover<strong>100</strong></span></a>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Home</a><a href="/about/tech-stack/" aria-current="page">Tech stack</a><a class="nav-cta" href="https://github.com/cover-100/cover100ai">GitHub</a></nav>
+  </div></header>
+  <main id="main">
+    <div class="container tech-stack-content">
+      <nav aria-label="Breadcrumb" class="tech-stack-crumb"><a href="/">Home</a> / Tech stack</nav>
+      <p class="eyebrow">ABOUT</p>
+      <h1>The technology behind cover100</h1>
+      <p class="lede">A tech stack is the tools used to build and run a product. cover100.dev describes a coverage workflow that aims for verified tests or documented gaps; the current coverage CLI and the planned agent plugin have distinct roles.</p>
+      <section><h2>This website</h2><p>The public site is plain HTML and CSS, with a small JavaScript file for copy buttons and tabs. Cloudflare Workers static assets serves the files directly. The page needs no application framework to explain the workflow or link to its source.</p></section>
+      <section><h2>The product</h2><p>The separate <a href="https://github.com/sneat-dev/cover100-cli">cover100 CLI</a> is written in Go. It collects coverage from Go and TypeScript/JavaScript projects and opens a local, zoomable treemap; its report stays on the user's machine. The <a href="https://github.com/cover-100/cover100ai">agent plugin repository</a> currently holds the proposed multi-agent workflow and language profiles as specifications. This website presents that pre-release plan, including independent test verification and reports of uncovered branches.</p></section>
+      <section><h2>Our tools used here</h2><p><a href="https://specscore.md/">SpecScore</a> keeps the plugin's feature and acceptance criteria in reviewable Markdown files. <a href="https://codegrapher.dev/">CodeGrapher</a> is part of the proposed agent research workflow: it can trace source relationships before tests are written. Those tools connect the coverage evidence back to the behavior the tests are meant to protect.</p></section>
+      <section><h2>Related projects</h2><p>Read the <a href="https://github.com/cover-100/cover100ai/tree/main/spec">plugin specification</a>, try the <a href="https://github.com/sneat-dev/cover100-cli">current coverage CLI</a>, or visit <a href="https://specscore.md/">SpecScore</a> for the specification format. The repositories publish their source under <a href="https://github.com/cover-100/cover100ai/blob/main/LICENSE">Apache License 2.0</a>.</p></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><p>© 2026 cover100 · <a href="https://github.com/cover-100/cover100ai/blob/main/LICENSE">Apache License 2.0</a></p><p><a href="/">Home</a> · <a href="/about/tech-stack/">Tech stack</a> · <a href="https://github.com/cover-100/cover100ai">GitHub</a></p></div></footer>
+</body>
+</html>
